@@ -1,0 +1,177 @@
+/* --- Page Header Tabs (Copied from return-product-page.css for independence) --- */
+.wrap > h2.nav-tab-wrapper {
+    border-bottom: 1px solid #dcdcde;
+    margin-bottom: 20px; /* Added margin for spacing */
+    padding-left: 0;
+}
+.nav-tab-wrapper a.nav-tab {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px 15px;
+    margin: 0 5px 0 0;
+}
+.nav-tab-wrapper a.nav-tab-active,
+.nav-tab-wrapper a.nav-tab:hover {
+    color: #0AA37A;
+    border-bottom-color: #0AA37A;
+    background: none;
+    box-shadow: none;
+}
+
+/* --- Barcode Scanner Page Styles --- */
+.oms-barcode-scanner-wrap h1 {
+    margin-bottom: 20px; /* ADDED: Space after the main title */
+}
+
+.oms-summary-section-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.oms-barcode-scanner-wrap .oms-tab-content {
+    display: none;
+}
+.oms-barcode-scanner-wrap .oms-tab-content.active {
+    display: block;
+}
+
+/* --- Subtabs (Copied from return-product-page.css) --- */
+.oms-list-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.oms-list-subtabs {
+    display: flex;
+    gap: 10px;
+}
+.oms-list-subtab {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer; /* Make it look clickable */
+}
+.oms-list-subtab .oms-count {
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.oms-list-subtab:hover {
+    background-color: #f0f0f0;
+    border-color: #dcdcdc;
+}
+.oms-list-subtab.active {
+    background-color: #f0f9f7;
+    border-color: #0AA37A;
+    color: #0AA37A;
+}
+.oms-list-subtab.active .oms-count {
+    background-color: #0AA37A;
+    color: #fff;
+}
+
+/* --- Card Styles (Copied from return-product-page.css) --- */
+.oms-return-scanner-card h2,
+.oms-scan-log-card h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.oms-barcode-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+}
+
+.oms-scan-feedback {
+    display: none;
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: left;
+}
+.oms-scan-feedback.success { background-color: #d4edda; color: #155724; }
+.oms-scan-feedback.error { background-color: #f8d7da; color: #721c24; }
+.oms-scan-feedback.warning { background-color: #fff3cd; color: #856404; }
+.oms-scan-feedback.loading { background-color: #e2e3e5; color: #383d41; }
+
+.oms-scan-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 0; /* Adjusted from 20px */
+}
+.oms-scan-stat-card {
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.oms-scan-stat-card.stat-total {
+    background-color: #f0f6fc;
+    border: 1px solid #d4e5f9;
+}
+.oms-scan-stat-card.stat-success {
+    background-color: #f0f9f0;
+    border: 1px solid #d4f0d4;
+}
+.oms-scan-stat-card.stat-fail {
+    background-color: #fcf0f0;
+    border: 1px solid #f9d4d4;
+}
+.oms-scan-stat-card-info h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 5px 0;
+}
+.oms-scan-stat-card-info .oms-scan-stat-count {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+}
+.oms-scan-stat-card-icon .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+.oms-scan-stat-card.stat-total .oms-scan-stat-count { color: #2271b1; }
+.oms-scan-stat-card.stat-success .oms-scan-stat-count { color: #27ae60; }
+.oms-scan-stat-card.stat-fail .oms-scan-stat-count { color: #c0392b; }
+.oms-scan-stat-card.stat-total .dashicons { color: #2271b1; }
+.oms-scan-stat-card.stat-success .dashicons { color: #27ae60; }
+.oms-scan-stat-card.stat-fail .dashicons { color: #c0392b; }
+
+.oms-scan-log-card .wp-list-table {
+    margin-top: 0;
+}
+
+/* Log row colors */
+.wp-list-table .oms-log-row--success td { background-color: #f0fff0; }
+.wp-list-table .oms-log-row--error td { background-color: #fff0f0; }
+.wp-list-table .oms-log-row--skipped td { background-color: #fffff0; }

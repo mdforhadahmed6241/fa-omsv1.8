@@ -1,0 +1,314 @@
+/* --- Page Header Tabs --- */
+.wrap > h2.nav-tab-wrapper {
+    border-bottom: 1px solid #dcdcde;
+    margin-bottom: 20px; /* Added margin for spacing */
+    padding-left: 0;
+}
+.nav-tab-wrapper a.nav-tab {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px 15px;
+    margin: 0 5px 0 0;
+}
+.nav-tab-wrapper a.nav-tab-active,
+.nav-tab-wrapper a.nav-tab:hover {
+    color: #0AA37A;
+    border-bottom-color: #0AA37A;
+    background: none;
+    box-shadow: none;
+}
+
+/* --- Return Product Page Styles --- */
+.oms-summary-section-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card 1: Return Summary */
+.oms-return-summary-card h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.oms-return-summary-card .oms-date-filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+.oms-return-summary-card .oms-date-filter-bar #filter-select {
+    min-width: 250px;
+}
+.oms-return-summary-card .oms-date-filter-bar .button {
+    background-color: #0AA37A;
+    border-color: #0AA37A;
+    color: #fff;
+}
+.oms-return-summary-card .oms-date-filter-bar .button:hover {
+    background-color: #088a66;
+    border-color: #088a66;
+}
+
+/* ADDED: Styles for the custom date range inputs */
+.oms-return-summary-card .oms-date-filter-bar .oms-date-range-label {
+    font-size: 13px;
+    color: #555;
+}
+.oms-return-summary-card .oms-date-filter-bar .oms-date-range-input {
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    width: auto;
+}
+/* END: Added styles */
+
+.oms-summary-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.oms-summary-stat-box {
+    flex-basis: 33%;
+}
+.oms-summary-stat-box h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+.oms-summary-stat-box .oms-main-stat {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+.oms-summary-stat-box .oms-main-stat.stat-green { color: #27ae60; }
+.oms-summary-stat-box .oms-main-stat.stat-red { color: #c0392b; }
+.oms-summary-stat-box .oms-main-stat.stat-total { color: #333; }
+
+
+/* Card 2: Receive Product Scanner */
+.oms-return-scanner-card h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.oms-return-scanner-card .oms-barcode-input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+}
+
+/* Card 3: Scan Stats Grid */
+.oms-scan-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+.oms-scan-stat-card {
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.oms-scan-stat-card.stat-total {
+    background-color: #f0f6fc;
+    border: 1px solid #d4e5f9;
+}
+.oms-scan-stat-card.stat-success {
+    background-color: #f0f9f0;
+    border: 1px solid #d4f0d4;
+}
+.oms-scan-stat-card.stat-fail {
+    background-color: #fcf0f0;
+    border: 1px solid #f9d4d4;
+}
+.oms-scan-stat-card-info h3 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin: 0 0 5px 0;
+}
+.oms-scan-stat-card-info .oms-scan-stat-count {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1;
+}
+.oms-scan-stat-card-icon .dashicons {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+.oms-scan-stat-card.stat-total .oms-scan-stat-count { color: #2271b1; }
+.oms-scan-stat-card.stat-success .oms-scan-stat-count { color: #27ae60; }
+.oms-scan-stat-card.stat-fail .oms-scan-stat-count { color: #c0392b; }
+.oms-scan-stat-card.stat-total .dashicons { color: #2271b1; }
+.oms-scan-stat-card.stat-success .dashicons { color: #27ae60; }
+.oms-scan-stat-card.stat-fail .dashicons { color: #c0392b; }
+
+
+/* Card 4: Scan Log */
+.oms-scan-log-card h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.oms-scan-log-card .wp-list-table {
+    margin-top: 0;
+}
+
+/* =================================== */
+/* --- Return List Tab New Styles --- */
+/* =================================== */
+
+.oms-list-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.oms-list-subtabs {
+    display: flex;
+    gap: 10px;
+}
+.oms-list-subtab {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0; /* CHANGED: Was transparent, now has border by default */
+    background-color: #f8f9fa; /* ADDED: Background color by default */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.oms-list-subtab .oms-count {
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+.oms-list-subtab:hover {
+    background-color: #f0f0f0; /* CHANGED: Made hover slightly darker */
+    border-color: #dcdcdc; /* CHANGED: Made hover slightly darker */
+}
+.oms-list-subtab.active {
+    background-color: #f0f9f7;
+    border-color: #0AA37A;
+    color: #0AA37A;
+}
+.oms-list-subtab.active .oms-count {
+    background-color: #0AA37A;
+    color: #fff;
+}
+
+.oms-list-search {
+    display: flex;
+    gap: 6px;
+}
+.oms-list-search #oms-list-search-input {
+    min-width: 250px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+}
+.oms-list-search #oms-list-search-submit {
+    background-color: #0AA37A;
+    border-color: #0AA37A;
+    color: #fff;
+    padding: 0 16px;
+}
+.oms-list-search #oms-list-search-submit:hover {
+    background-color: #088a66;
+    border-color: #088a66;
+}
+
+
+/* Return List Table (for other tab) */
+.oms-return-list-table {
+    margin-top: 0; /* Removed margin-top to align with controls */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.oms-return-list-table thead tr {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+}
+.oms-return-list-table thead th {
+    font-size: 13px; /* CHANGED: Was 12px */
+    font-weight: 500; /* CHANGED: Was 600 */
+    color: #333; /* CHANGED: Was #555 */
+    text-transform: none; /* CHANGED: Was uppercase */
+    background: none;
+    border-bottom: none;
+    padding: 12px 10px; /* ADDED: Explicit padding */
+}
+.oms-return-list-table tbody tr:first-child td {
+    border-top: none;
+}
+.oms-return-list-table tbody td {
+    padding: 16px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+.oms-return-list-table tbody td strong {
+    font-weight: 500;
+    color: #333;
+}
+.oms-return-list-table tbody td a strong {
+    color: #2271b1;
+}
+
+/* New Status Pill Styles */
+.oms-status-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #e9ecef;
+    color: #495057;
+}
+.oms-status-pill.status-returned {
+    background-color: #fcf0f0;
+    color: #c0392b;
+}
+.oms-status-pill.status-partial-return {
+    background-color: #fff8f0;
+    color: #d35400;
+}
+
+/* Green Button Style */
+.oms-return-list-table .button.button-green {
+    background-color: #0AA37A;
+    border-color: #0AA37A;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+.oms-return-list-table .button.button-green:hover {
+    background-color: #088a66;
+    border-color: #088a66;
+}
